@@ -1,0 +1,10 @@
+---
+- hosts: all
+  become: true
+  gather_facts: no
+  tasks:
+  - name: install iproute-tc
+    yum:
+      name: iproute-tc
+      state: latest
+    tags: iproute-tc
