@@ -1,0 +1,10 @@
+---
+- hosts: CentOS
+  tasks:
+  - name: Test Task
+    file:
+      path: /tmp/helloworld.txt
+      state: touch
+      owner: root
+      group: root
+      mode: 0644
