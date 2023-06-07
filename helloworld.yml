@@ -1,5 +1,5 @@
 ---
-- hosts: CentOS
+- hosts: 4225a859241c.mylabserver.com
   tasks:
   - name: Test Task
     file:
